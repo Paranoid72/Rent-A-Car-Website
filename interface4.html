@@ -1,0 +1,151 @@
+<html>
+
+ <head>
+     <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <meta charset="UTF-8">
+	 <title> Easy Drive </title>
+     <link rel="shortcut icon" type="image/png" href="favicon.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="style.css"/>
+     <script src="https://kit.fontawesome.com/894fc327bb.js" crossorigin="anonymous"></script>
+     <script src="nav.js"></script>
+     <script>
+        function cost()
+        { 
+          var age = document.getElementById("age").value;
+          var cc = document.getElementById("cc").value;
+          var days = document.getElementById("days").value;
+          var res = document.getElementById("result").value;
+          var insurancecost;
+          var rentcost;
+          if(age<=22){
+            insurancecost=age*0,00042*cc;
+          }
+          else if( age<=30){
+            insurancecost=age*0,00032*cc;
+          }
+          else{
+            insurancecost=age*0,00023*cc
+          }
+          if(cc<=1600){
+             if(days<=5){
+               rentcost=days*15,42;
+             }
+             else if(days<=10){
+                rentcost=days*14,62;
+             }
+             else{
+                rentcost=days*13,15;
+             }
+          }
+          else if(cc<=2000){
+               if(days<=5){
+               rentcost=days*16,82;
+             }
+             else if(days<=10){
+                rentcost=days*15,76;
+             }
+             else{
+                rentcost=days*14,80;
+             }
+          }
+          else{
+               if(days<=5){
+               rentcost=days*18,22;
+             }
+             else if(days<=10){
+                rentcost=days*17,10;
+             }
+             else{
+                rentcost=days*16,20;
+             }
+          }
+          var total = insurancecost + rentcost;
+          alert("Το συνολικό κόστος ενοικίασης ανέρχεται στα: " +total,);
+        }
+     </script>
+ </head>
+ <body>
+     <article id="interface4">
+        <nav class="nav"> 
+            <a href="interface1.html"> <img src="logo.png"> </a> <h3> Easy Drive </h3>
+            <div class="navlinks" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                   <li> <a href="interface1.html"> Αρχική Σελίδα </a> </li>
+                   <li> <a href="interface2.html"> Προφίλ Εταιρείας </a> </li>
+                   <li> <a href="interface3.html"> Στόλος </a> </li>
+                   <li> <a class= "active" href="interface4.html"> Κόστος </a> </li>
+                   <li> <a href="interface5.html"> Επικοινωνία </a> </li>
+                   <li> <a href="interface6.html"> Σελίδα Διαχείρισης </a> </li>
+                </ul>	
+            </div>	
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>				 
+        </nav>  
+         <section id="calculation">
+             <div>
+                 <h2>Υπολογισμός Κόστους Ενοικίασης</h2>
+             </div>
+             <div>
+                 <h4>Παρακαλώ συμπληρώστε την ακόλουθη φόρμα για τον υπολογισμό του κόστους.</h4>
+             </div>
+             <div class="box">
+                 <div class="costform">
+                     <form>
+                         <div>
+                             <label>Ποιά είναι η ηλικίας σας;</label>
+                             <input type="text" name="age" id="age">
+                         </div>
+                         <div>
+                             <label>Πόσα κυβικά είναι το αυτοκίνητο που επιθυμείτε να ενοικιάσετε;</label>
+                             <input type="text" name="cc" id="cc">
+                         </div>
+                         <div>
+                             <label>Για πόσες ημέρες επιθυμείτε να το ενοικιάσετε;</label>
+                             <input type="text" name="days" id="days">    
+                         </div>
+                         <button onclick="cost()"> Yπολογισμός </button> 
+                     </form>
+                 </div>
+             </div>
+         </section>
+		 <footer class="footer">
+			<div class="containerf">
+					<div class="footer-col">
+						<h4> Newsletter </h4>
+						<form action="http://localhost/websiteproject/test2.php" method="post">
+							<div>
+							   <label for="username">Username:</label>
+							   <input type="text" name="username">
+							</div>
+							<div>
+								<label for="name">Name:</label>
+							   <input type="text" name="names">
+							</div>
+							<div>
+								<label for="email">Email:</label>
+							   <input type="text" name="email">
+							</div>
+							<button type="submit" name="submit">Εγγραφή</button>
+						</form>
+					</div>
+					<div class="footer-col">
+						<h4> Επικοινωνία </h4>
+						<ul>
+							<li> Διέυθυνση: Βριλυσσίων 15, Χαλάνδρι, Αθήνα, 15234</li>
+							<li> Τηλέφωνο: <a href="#"> 2104222106 </a></li>
+							<li> Email: <a href="#"> easydrive@gmail.com </a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4> Τοποθεσία </h4>
+						<iframe class="footermap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.93037509924!2d23.824727114680634!3d38.02540260547432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a199110c0d792b%3A0x92859a2f7ece041d!2sVrilission%2015%2C%20Chalandri%20152%2034!5e0!3m2!1sen!2sgr!4v1654361957257!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+			</div>
+		 </footer>
+     </article>
+ 
+ 
+ 
+ </body>
+</html> 

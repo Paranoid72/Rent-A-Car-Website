@@ -1,0 +1,582 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.header1 {
+	min-height: 100vh;
+	width: 100%;
+}
+
+/*FOOTER*/
+.footer{
+	background-color: #303030;
+	padding: 10px 0px;
+	position: relative;
+}
+.footer label{
+	color: white;
+}
+.footer ul{
+	list-style: none;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	font-weight: 500;
+	color:#ffff;
+	margin-bottom: 15px;
+	position: relative;
+}
+.footer-col h4::before{
+	content:'';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	background-color: #A52A2A;
+	height: 2px;
+	box-sizing: border-box;
+	width: 60px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+	color: #1E90FF;
+}
+.footer-col li{
+	color: #e0f0ff;
+}
+.footermap{
+	width: 300px;
+	height: 150px;
+}
+
+.footer button{
+	margin-top: 10px;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 2.5px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	background-color: #A52A2A;
+	text-decoration: none;
+	color: white;
+}
+.footer button:hover{
+	background-color:#B22222;
+}
+.containerf{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.5rem;
+	justify-content: center;
+	background: #303030;
+	padding:5px;
+}
+
+
+/* NAVIGATION BAR */
+nav {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #A52A2A;
+}
+
+nav img{
+	width:100px;
+}
+
+.navlinks {
+	flex: 1;
+	text-align: right;
+}
+
+.navlinks ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.navlinks ul li a {
+	color: white;
+	border-radius: 3px;
+	padding: 5px;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+.navlinks a:hover{
+	background: #800000;
+	transition: .5s;
+}
+a.active{
+	background-color: #191919; /*Ανάλογα το interface, φαίνεται το χρώμα αυτό στο Nav.*/
+}
+nav .fa-solid{
+	display: none;
+}
+
+/*ΙNTERFACE 1*/
+
+/* ΠΟΙΟΙ ΕΙΜΑΣΤΕ */
+.weare-grid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);  /*2 columns with 2 fraction each*/
+	justify-content: center;
+	align-items: center;
+	min-height:400px;	
+}
+.weare1{
+	text-align:center;
+	background: #101010;
+	color:white;
+	padding:100px ;
+}
+.whoweare{
+	background:#191919;
+	border-radius:5px;
+	position:relative;
+	padding: 25px;
+	margin: 10px;
+	text-align:center;
+	overflow:hidden;
+}
+.video{
+	position:relative;
+	padding: 25px;
+	margin: 10px;
+	text-align:center;
+
+	
+}
+.video iframe{
+	position:center;
+	top:0;
+	left:0;
+
+}
+
+/* ΟΙ ΥΠΗΡΕΣΙΕΣ ΜΑΣ */
+.services-grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);  /*2 columns with 2 fraction each*/
+	justify-content: center;
+	align-items: center;
+	min-height:400px;
+
+}
+.services-grid img{
+	width:200px;
+	height: 125px;
+	border-radius: 3px;
+}
+.services{
+	color: white;
+	text-align: center;
+	padding:100px;
+	background:#778899 ;
+}
+.services h2{
+	font-size:50px;
+}
+
+.rentnow {
+	padding: 15px 35px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	background-color: #A52A2A;
+	text-decoration: none;
+	color: white;
+}
+
+.rentnow:hover{
+	background-color:#B22222;
+}
+
+/* INTERFACE 2*/
+
+/* ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ */
+.aboutus {
+	text-align:center;
+	background: #101010;
+	color:white;
+	padding:100px ;
+}
+
+.aboutus h2 {
+	font-size:50px;
+}
+.us{
+	background:#191919;
+	border-radius:20px;
+	position:relative;
+	padding: 25px;
+	margin: 10px;
+	text-align:center;
+	overflow:hidden;
+}
+
+/* Ι ΑΝΑΦΕΡΕΤΑΙ ΣΤΑ ΕΙΚΟΝΙΔΙΑ ΤΩΝ ΚΟΥΤΙΩΝ */
+.us i{
+	font-size: 25px;
+	display:block;
+	text-align:center;
+	margin:20px;
+	margin-bottom:5px;
+	color: #E6E6FA;
+}
+
+.us p {
+	color:#ADD8E6;
+	margin-bottom:10px;
+}
+.us-grid{
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	min-height:400px;
+}
+.us-grid h3 {
+	font-size: 20px;
+	margin-bottom:15px;
+}
+
+/* ΑΝΘΡΩΠΙΝΟ ΔΥΝΑΜΙΚΟ */
+.hr-grid{
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+	min-height:400px;
+}
+.hr-grid h3 {
+	font-size: 20px;
+	margin-bottom:15px;
+}
+/* HR ΚΛΑΣΣΗ ΠΟΥ ΑΝΑΦΕΡΕΤΑΙ ΣΤΟ SECTION HUMAN RESOURCES */
+.hr {
+	text-align:center;
+	background: #303030;
+	color:white;
+	padding:100px ;
+}
+
+.hr h2 {
+	font-size:50px;
+}
+
+/* TMIMA ΚΛΑΣΣΗ ΠΟΥ ΑΝΑΦΕΡΕΤΑΙ ΣΤΑ ΚΟΥΤΙΑ ΤΩΝ ΤΜΗΜΑΤΩΝ */
+.tmima{
+	background:#191919;
+	border-radius:20px;
+	position:relative;
+	padding: 25px;
+	margin: 10px;
+	text-align:center;
+	overflow:hidden;
+}
+.tmima i{
+	font-size: 25px;
+	display:block;
+	text-align:center;
+	margin:20px;
+	margin-bottom:5px;
+	color: #E6E6FA;
+}
+.tmima p{
+	color:99CCFF;
+	margin-bottom:10px;
+}
+
+/* COST ΚΛΑΣΣΗ ΠΟΥ ΑΝΑΦΕΡΕΤΑΙ ΣΤΟ SECTION ΥΠΟΛΟΓΙΣΜΟΥ ΚΟΣΤΟΥΣ */
+.cost{
+	background:#404040;
+	text-align:center;
+	color:white;
+	padding:100px ;
+}
+
+.rnt button{
+	color:white;
+	border:none;
+	background-color:#B22222;
+	padding:5px;
+	border-radius:4px;
+	box-shadow:inset 0 0 0 0 #6A5ACD;
+	transition: ease-out 0.3s;
+	outline: none;
+	width:100px;
+}
+
+.rnt button:hover{
+	box-shadow:inset 100px 0 0 0 #6A5ACD;
+	cursor:pointer;
+}
+
+/* INTERFACE 3 */
+.gallery-grid{
+	display: flex;
+	grid-template-columns: repeat(4, 2fr);
+	grid-gap: 1.5rem;
+	justify-content: center;
+	background: #191919;
+	padding:5px;
+}
+.gallery img{
+	width:300px;
+	height: 200px;
+	object-position: 20% 20%;
+	object-fit: cover;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+.gallery img:hover {
+	transform: scale(1.2);
+}
+.gallery img{
+	width:300px;
+}
+#gallery h2{
+	background: #191919;
+	text-align: center;
+	color: white;
+}
+
+
+/*INTERFACE 4*/
+#calculation {
+	text-align:center;
+	background: #101010;
+	color:white;
+	padding:100px ;
+}
+
+#calculation h2{
+	font-size:50px;
+}
+
+.costform{
+	background-color: #065A82;
+	border-radius: 5px;
+	display: flex;
+	padding: 20px;
+}
+.costform input{
+	width: 50px;
+}
+.costform button{
+	background-color:#90BEDE;
+	border-radius: 4px;
+	color: white;
+	padding: 5px;
+	text-decoration: none;
+	display: inline-block;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none;
+	border:none;
+}
+.costform button:hover{
+	background-color: #7D84B2;
+}
+.box{
+	display:grid;
+	justify-content: center;
+	align-items: center;
+	min-height:400px;
+}
+.field{
+	width: 100%;
+	padding: 2.5px;
+	background-color: rgba(230, 230, 230, 0.6);
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+	outline: none;
+	border: 2px solid rgba(0,0,0,0);
+}
+.field:hover{
+	background-color: rgba(0,0,0,0.1);
+
+}
+.field:focus{
+	background-color: #fff;
+	border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+
+/*INTERFACE 5*/
+#communication{
+	text-align: center;
+	background-color: #1A1A1D;
+	color: white;
+	padding: 20px;
+}
+#data{
+	text-align: center;
+	background-color: #404040;
+	color: white;
+	padding: 20px;
+}
+#maps{
+	text-align: center;
+	background-color: #191919;
+	color: white;
+	padding: 20px;
+}
+#maps h3{
+	padding-bottom: 10px;
+}
+.formcom{
+	background-color: #A52A2A;
+	border-radius: 3px;
+	padding: 15px;
+	color: white;
+	margin-top: 10px;
+	width: 190px;
+}
+.formcom input{
+	outline:none;
+	border:none;
+}
+
+.formcom button{
+	background-color:white;
+	border-radius: 4px;
+	color: black;
+	padding: 5px;
+	text-decoration: none;
+	display: inline-block;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none;
+	border:none;
+}
+
+.formcom button:hover{
+	background-color: black;
+	color: white;
+}
+
+/*INTERFACE 6*/
+#managment{
+	text-align: center;
+	background-color: #191919;
+	color: #E6E6FA;
+	padding: 120px;
+}
+#managment h2{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#managment p{
+	margin-bottom: 10px;
+}
+#managment button{
+	margin-top: 10px;
+	background-color: #A52A2A;
+	border-radius: 1px;
+	padding:7px;
+	display: inline-block;
+	cursor: pointer;
+	border: none;
+	color: white;
+	transition: 0.3s;
+}
+#managment button:hover{
+	background-color: #483D8B;
+}
+#managment input{
+	border: none;
+	outline: none;
+}
+
+#menuicon{
+	color: black;
+	font-size: 30px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+
+
+/* media queries για grids, μικρές οθόνες */
+
+@media(max-width:1100px){
+	.weare-grid{
+		grid-template-columns: 1fr;
+	}
+	.services-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.us-grid{
+		grid-template-columns: 1fr;
+	}
+	.hr-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.gallery-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.containerf{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media(max-width: 780px){
+	.gallery-grid{
+		grid-template-columns: 1fr;
+	}
+	.nav{
+		font-size: 12px;
+	}
+	.navlinks{
+		position: absolute;
+		background: #A52A2A;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	.navlinks ul li{
+		display: block;
+	}
+	nav .fa-solid{
+		display: block;
+		color: black;
+		margin: 10px;
+		font-size: 20px;
+		cursor: pointer;
+	}
+	.navlinks ul{
+		padding: 33px;
+
+	}
+}
+
+

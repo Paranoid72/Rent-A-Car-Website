@@ -1,0 +1,104 @@
+<html>
+
+ <head>
+     <meta name="viewport" content="with=device-width, initial-scale=1.0">
+	 <meta charset="UTF-8">
+	 <title> Easy Drive </title>
+	 <link rel="shortcut icon" type="image/png" href="favicon.png">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="style.css"/>
+	 <script src="https://kit.fontawesome.com/894fc327bb.js" crossorigin="anonymous"></script>
+	 <script src="nav.js"></script>
+ </head>
+ <body>
+     <article id="interface5">
+		<nav class="nav"> 
+			<a href="interface1.html"> <img src="logo.png"> </a> <h3> Easy Drive </h3>
+			<div class="navlinks" id="navLinks">
+				<i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+				<ul>
+				   <li> <a href="interface1.html"> Αρχική Σελίδα </a> </li>
+				   <li> <a href="interface2.html"> Προφίλ Εταιρείας </a> </li>
+				   <li> <a href="interface3.html"> Στόλος </a> </li>
+				   <li> <a href="interface4.html"> Κόστος </a> </li>
+				   <li> <a class= "active" href="interface5.html"> Επικοινωνία </a> </li>
+				   <li> <a href="interface6.html"> Σελίδα Διαχείρισης </a> </li>
+				</ul>	
+			</div>	
+			<i class="fa-solid fa-bars" onclick="showMenu()"></i>				 
+		</nav>  
+         <section id="communication">
+			 <h2>Φόρμα Επικοινωνίας</h2>
+			 <div class="box">
+				 <div class="formcom">
+                     <form action="http://localhost/websiteproject/test.php" method="post">
+	                     <!--Όνομα: <br>-->
+	                     <input type="text" name="named" class="field" placeholder="Όνομα"> <br>
+                         <!--Τηλέφωνο: <br>-->
+                         <input type="text" name="tilefwno" class="field" placeholder="Τηλέφωνο"> <br>
+                         <!--Email: <br>-->
+                         <input type="text" name="email" class="field" placeholder="Email"> <br>
+                         Θέμα: <br>
+                         <select name="thema">
+                             <option value="rent"> Ενοικίαση </option>
+                             <option value="transport"> Μεταφορά </option>
+                             <option value="qa"> Απορίες </option>
+                             <option value="else"> Άλλο </option>
+                         </select>	<br><br>  
+                         Μήνυμα: <br>
+                         <textarea name="messaged" rows="20" cols="20"> </textarea> <br> <br>
+                         <button type="submit" name="submit"> Στείλε Μήνυμα! </button> 	   
+                     </form>
+			     </div>	
+			 </div>
+         </section>
+         <section id="data">
+		         <h2> Στοιχεία Επικοινωνίας </h2>
+	             Διεύθυνση: Βριλυσσίων 15, Χαλάνδρι, Αθήνα, 15234 <br>
+	             Τηλέφωνο: 2104222106, 2114256001  <br>
+	             Email: easydrive@gmail.com <br>
+         </section>
+         <section id="maps">
+			 <h3>Θα μας βρείτε εδώ:</h3>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25143.44458125256!2d23.826916!3d38.025398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a199110c0d792b%3A0x92859a2f7ece041d!2sVrilission%2015%2C%20Chalandri%20152%2034!5e0!3m2!1sen!2sgr!4v1654362183043!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </section>
+		 <footer class="footer">
+			<div class="containerf">
+					<div class="footer-col">
+						<h4> Newsletter </h4>
+						<form action="http://localhost/websiteproject/test2.php" method="post">
+							<div>
+							   <label for="username">Username:</label>
+							   <input type="text" name="username">
+							</div>
+							<div>
+								<label for="name">Name:</label>
+							   <input type="text" name="names">
+							</div>
+							<div>
+								<label for="email">Email:</label>
+							   <input type="text" name="email">
+							</div>
+							<button type="submit" name="submit">Εγγραφή</button>
+						</form>
+					</div>
+					<div class="footer-col">
+						<h4> Επικοινωνία </h4>
+						<ul>
+							<li> Διέυθυνση: Βριλυσσίων 15, Χαλάνδρι, Αθήνα, 15234</li>
+							<li> Τηλέφωνο: <a href="#"> 2104222106 </a></li>
+							<li> Email: <a href="#"> easydrive@gmail.com </a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4> Τοποθεσία </h4>
+						<iframe class="footermap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.93037509924!2d23.824727114680634!3d38.02540260547432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a199110c0d792b%3A0x92859a2f7ece041d!2sVrilission%2015%2C%20Chalandri%20152%2034!5e0!3m2!1sen!2sgr!4v1654361957257!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+			</div>
+		 </footer>
+      </article>
+ 
+ 
+ 
+ </body>
+</html> 
